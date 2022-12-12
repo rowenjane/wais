@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/9779e9cb68.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../waisusercss/waisaccount.css">
+    <title>User</title>
+</head>
+<body>
+    <header>
+        <div class="iconholder">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="navbar">
+            <div class="holder">
+                <div class="imgholder">
+                    <img src="../images/waislogo.png" alt="Logo">
+                </div>
+                <ul>
+                    <li><a href="waisalumni.html">Alumni</a></li>
+                    <li>
+                        <a href="#">Institute
+                            <!--<i class="fa-solid fa-caret-down"></i>-->
+                        </a>
+                        <!--<div class="dropdown">
+                            <div class="dropdowncontent">
+                                <a href="">CA</a>
+                                <a href="">IE</a>
+                                <a href="">IEAT</a>
+                                <a href="">IM</a>
+                            </div>
+                        </div>-->
+                    </li>
+                    <li>
+                        <a href="#">Course
+                            <!--<i class="fa-solid fa-caret-down"></i>-->
+                        </a>
+                        <!--<div class="dropdown">
+                            <div class="dropdowncontent">
+                                <a href="">BSIT</a>
+                                <a href="">BSABEN</a>
+                                <a href="">BSGE</a>
+                                <a href="">BSFT</a>
+                            </div>
+                        </div>-->
+                    </li>
+                    <li>
+                        <a href="#">Year
+                            <!--<i class="fa-solid fa-caret-down"></i>-->
+                        </a>
+                        <!--<div class="dropdown">
+                            <div class="dropdowncontent">
+                                <a href="">2000</a>
+                                <a href="">2001</a>
+                                <a href="">2002</a>
+                                <a href="">2003</a>
+                            </div>
+                        </div>-->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="accountholder">
+            <div class="userprofile">
+                <i class="fa-solid fa-circle-user"></i>
+                <p>user</p>
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown">
+                    <div class="dropdowncontent">
+                        <a href="waisaccount.html"><i class="fa-solid fa-user"></i>Account</a>
+                        <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <center>
+        <main class="maincontent">
+            <div class="maincontentbg">
+                <div class="divmaincontent">
+                    <img src="../images/basc.png" alt="profile">
+                    <h1>Iana Blas</h1>
+                    <p class="p1">iana123</p>
+                    <button><a href="waiseditaccount.html">Edit</a></button>
+                </div>
+            </div>
+        </main>
+    </center>
+    <script>
+        
+        menubtn = document.querySelector(".fa-bars");
+        menubtn.onclick = function() {
+            navbar = document.querySelector(".navbar");
+            navbar.classList.toggle("active");
+        }
+
+    </script>
+</body>
+</html>

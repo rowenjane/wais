@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../waiscss/waisregister.css">
+    <title>Register</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="container">
+        <div class="holder">
+            <div class="groupedimg">
+                <img src="../websiteimages/basclogo.png" alt="Logo">
+                <p>Sign Up</p>
+            </div>
+            <form action="">
+                <div class="grouped1">
+                    <label class="label" for="firstname">Name</label>
+                    <div class="inputholder">
+                        <input type="text" id="firstname" maxlength="50" placeholder="First Name" required>
+                        <input type="text" id="middlename" maxlength="50" placeholder="Middle Name" required>
+                        <input type="text" id="lastname" maxlength="50" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="grouped">
+                    <label class="label" for="inputsex">Sex</label>
+                    <input type="radio" id="rbmale" name="inputsex" value="Male">
+                    <label class="rbmale" for="rbmale">Male</label>
+                    <input type="radio" id="rbfemale" name="inputsex" value="Female">
+                    <label class="rbfemale" for="rbfemale">Female</label>
+                    <input type="radio" id="rbothers" name="inputsex" value="Others">
+                    <label class="rbothers" for="rbothers">Others</label>
+                </div>
+                <div class="grouped2">
+                    <label class="label" for="email">Contact</label>
+                    <div class="inputholder">
+                        <input type="text" id="email" placeholder="Email" required>
+                        <input type="text" id="number" placeholder="Cellphone Number" required>
+                    </div>
+                </div>
+                <div class="grouped">
+                    <label class="label" for="bday">Birthday</label>
+                    <input type="text" id="bday" onfocus="(this.type='date')" placeholder="Date of Birth">
+                </div>
+                <div class="grouped">
+                    <label class="label" for="inputadd">Address</label>
+                    <input type="text" id="add" maxlength="100" placeholder="Current Address" required>
+                </div>
+                <div class="grouped">
+                    <label class="label" for="inputdate">Date</label>
+                   <input type="text" id="date" placeholder="Date Graduated" onfocus="(this.type='date')" max="50" required>
+                </div>
+                <div class="grouped">
+                    <label class="label" for="course">Course</label>
+                    <select name="course" id="course">
+                        <option value="a">Bachelor in Elementary Education</option>
+                        <option value="b">Bachelor in Secondary Education major in English</option>
+                        <option value="c">Bachelor in Secondary Education major in Science</option>
+                        <option value="d">Bachelor of Science in Agriculture</option>
+                        <option value="a">Bachelor of Science in Agriculture major in Animal Science</option>
+                        <option value="b">Bachelor of Science in Agriculture major in Horticulture</option>
+                        <option value="c">Doctor of Veterinary Medicine</option>
+                        <option value="d">Bachelor of Science in Agriculture and Biosystem Engineering</option>
+                        <option value="a">Bachelor of Science in Food Technology</option>
+                        <option value="b">Bachelor of Science in Geodetic Engineering</option>
+                        <option value="c">Bachelor of Science in Information Technology </option>
+                        <option value="d">Bachelor of Science in Agribusiness Management</option>
+                        <option value="a">Bachelor of Science in Business Administration major in Marketing Management</option>
+                        <option value="b">Bachelor of Science in Hospitalily Management major in Hotel and Restaurant Management</option>
+                        <option value="c">Bachelor of Science in Agroforestry</option>
+                    </select>
+                </div>
+                <div class="grouped">
+                    <label class="label" for="insti">Institute</label>
+                    <select name="insti" id="insti">
+                        <option value="a">College of Agriculture </option>
+                        <option value="b">Institute of Education</option>
+                        <option value="c">Institute of Engineering and Applied Technology</option>
+                        <option value="d">Institute of Management</option>
+                    </select>
+                </div>
+                <div class="grouped">
+                    <label class="label" for="employment">Employed</label>
+                    <input type="radio" id="rbyes" name="employment" value="Yes">
+                    <label class="rbyes" for="rbyes">Yes</label>
+                    <input type="radio" id="rbno" name="employment" value="No">
+                    <label class="rbno" for="rbno">Female</label>
+                </div>
+                <div class="grouped3">
+                    <label class="label" for="account">Account</label>
+                    <div class="inputholder">
+                        <input type="text" name="account" id="username" maxlength="50" placeholder="Username" required>
+                        <input type="password" name="account" id="pass" maxlength="50" placeholder="Password" required>
+                    </div>
+                </div>
+                <div>
+                    <div class="hold">
+                        <button type="submit" id="submit" class="submit">Register</button>
+                    </div>
+                </div>
+                <div class="grouped">
+                    <p>Already have an account? <a href="waislogin.html">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

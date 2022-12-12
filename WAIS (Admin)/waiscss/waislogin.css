@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#098400, #d7b700);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+.divlogin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #ffff;
+    box-shadow: 1px 1px 10px 1px rgb(78, 78, 78);
+    border-radius: 4px;
+    height: 400px;
+    max-width: 480px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.divlogin .grouped {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    height: 100%;
+    width: 100%;
+}
+
+.divlogin .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+}
+
+.divlogin .image img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+form {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form .divflex {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .divflex label {
+    width: 100px;
+    font-size: 13px;
+}
+
+form .divflex input, form .divflex select {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: rgb(237, 237, 237);
+    border-radius: 2px;
+    padding-left: 15px;
+    height: 30px;
+}
+
+form div button {
+    background-color: #098400;
+    color: #ffff;
+    border: none;
+    padding: 8px 40px 8px 40px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+form div button:hover {
+    background-color: #075b01;
+}
+
+.divlogin .member {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divlogin .member a {
+    text-decoration: none;
+    color: #098400;
+}
+
+.divlogin .member a:hover {
+    color: #087200;
+    text-decoration: underline;
+}
+
+@media (max-width: 680px) {
+
+    body {
+        background-image: none;
+    }
+
+    .grouped {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .divlogin {
+        box-shadow: none;
+        width: 400px;
+        height: 500px;
+    }
+
+    .divlogin .image img {
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+    }
+
+    form {
+        height: 100%;
+    }
+
+    form .divflex {
+        display: flex;
+        flex-direction: column;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    form .divflex label {
+        margin-bottom: 5px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    form .divflex input, form .divflex select {
+        width: 100%;
+    }
+}

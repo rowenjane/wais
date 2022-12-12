@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../waisusercss/waisalumni.css">
+    <script src="https://kit.fontawesome.com/9779e9cb68.js" crossorigin="anonymous"></script>
+    <title>WAIS</title>
+</head>
+<body>
+    <header>
+        <div class="iconholder">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="navbar">
+            <div class="holder">
+                <div class="imgholder">
+                    <img src="../images/waislogo.png" alt="Logo">
+                </div>
+                <ul>
+                    <li><a href="waisalumni.html">Alumni</a></li>
+                    <li>
+                        <a href="#">Institute
+                            <!--<i class="fa-solid fa-caret-down"></i>-->
+                        </a>
+                        <!--<div class="dropdown">
+                            <div class="dropdowncontent">
+                                <a href="">CA</a>
+                                <a href="">IE</a>
+                                <a href="">IEAT</a>
+                                <a href="">IM</a>
+                            </div>
+                        </div>-->
+                    </li>
+                    <li>
+                        <a href="#">Course
+                            <!--<i class="fa-solid fa-caret-down"></i>-->
+                        </a>
+                        <!--<div class="dropdown">
+                            <div class="dropdowncontent">
+                                <a href="">BSIT</a>
+                                <a href="">BSABEN</a>
+                                <a href="">BSGE</a>
+                                <a href="">BSFT</a>
+                            </div>
+                        </div>-->
+                    </li>
+                    <li>
+                        <a href="#">Year
+                            <!--<i class="fa-solid fa-caret-down"></i>-->
+                        </a>
+                        <!--<div class="dropdown">
+                            <div class="dropdowncontent">
+                                <a href="">2000</a>
+                                <a href="">2001</a>
+                                <a href="">2002</a>
+                                <a href="">2003</a>
+                            </div>
+                        </div>-->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="accountholder">
+            <div class="userprofile">
+                <i class="fa-solid fa-circle-user"></i>
+                <p>user</p>
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="dropdown">
+                    <div class="dropdowncontent">
+                        <a href="waisaccount.html"><i class="fa-solid fa-user"></i>Account</a>
+                        <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <center>
+        <main class="maincontent">
+            <div class="bg">
+                <div class="flexdiv">
+
+                    <div>
+                        <form action="">
+                            <input type="text"placeholder="Search">
+                            <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div>
+                        <div class="cardholder">
+                            <div class="collapsible">
+                                <img src="../images/basc.png" alt="">
+                                <p>Fely Imam</p>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                            <div class="content">
+                                <img src="../images/basc.png" alt="">
+                                <h2>Fely Imam</h2>
+                                <p>2019100001</p>
+                                <p>BSIT</p>
+                                <p>2022</p>
+                                <p>Institute of Engineering and Applied Technology</p>
+                            </div>
+                            <div class="collapsible">
+                                <img src="../images/basc.png" alt="">
+                                <p>Iana Blas</p>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                            <div class="content">
+                                <img src="../images/basc.png" alt="">
+                                <h2>Iana Blas</h2>
+                                <p>2019100001</p>
+                                <p>BSIT</p>
+                                <p>2022</p>
+                                <p>Institute of Engineering and Applied Technology</p>
+                            </div>
+                            <div class="collapsible">
+                                <img src="../images/basc.png" alt="">
+                                <p>Owen De Leon</p>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                            <div class="content">
+                                <img src="../images/basc.png" alt="">
+                                <h2>Owen De Leon</h2>
+                                <p>2019100001</p>
+                                <p>BSIT</p>
+                                <p>2022</p>
+                                <p>Institute of Engineering and Applied Technology</p>
+                            </div>
+                            <div class="collapsible">
+                                <img src="../images/basc.png" alt="">
+                                <p>Fely Imam</p>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                            <div class="content">
+                                <img src="../images/basc.png" alt="">
+                                <h2>Fely Imam</h2>
+                                <p>2019100001</p>
+                                <p>BSIT</p>
+                                <p>2022</p>
+                                <p>Institute of Engineering and Applied Technology</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="page">
+                            <div class="pagination">
+                                <a href="">
+                                    <i class="fa-solid fa-caret-left"></i>
+                                </a>
+                                <a href="">1</a>
+                                <a href="">2</a>
+                                <a href="">3</a>
+                                <a href="">
+                                    <i class="fa-solid fa-caret-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </center>
+    <script>
+
+        menubtn = document.querySelector(".fa-bars");
+        menubtn.onclick = function() {
+            navbar = document.querySelector(".navbar");
+            navbar.classList.toggle("active");
+        }
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+        }
+    </script>
+</body>
+</html>
